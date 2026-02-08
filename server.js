@@ -58,7 +58,10 @@ app.use((err, req, res, next) => {
 // Database connection
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(process.env.MONGODB_URI)
+// Hardcoded MongoDB URI here
+const MONGODB_URI = 'mongodb+srv://gg60473_db_user:cYaYY0wOyRyjKGYI@cluster0.n9rlaxk.mongodb.net/hrms_db?retryWrites=true&w=majority&appName=cluster0';
+
+mongoose.connect(MONGODB_URI)
   .then(() => {
     console.log('✅ Connected to MongoDB');
     app.listen(PORT, () => {
@@ -76,3 +79,4 @@ process.on('unhandledRejection', (err) => {
   console.error('Unhandled Rejection:', err);
   process.exit(1);
 });
+//gaurav
