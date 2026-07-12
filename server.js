@@ -59,7 +59,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 
 // Hardcoded MongoDB URI here
-const MONGODB_URI = 'mongodb+srv://gg60473_db_user:cYaYY0wOyRyjKGYI@cluster0.n9rlaxk.mongodb.net/hrms_db?retryWrites=true&w=majority&appName=cluster0';
+const MONGODB_URI = 'mongodb+srv://gg60473_db_user:Gaurav8933@cluster0.ggjvslp.mongodb.net/hrms_db?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
