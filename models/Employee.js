@@ -30,7 +30,6 @@ const employeeSchema = new mongoose.Schema({
 });
 
 // Index for faster queries
-employeeSchema.index({ employeeId: 1 });
-employeeSchema.index({ email: 1 });
+
 
 module.exports = mongoose.model('Employee', employeeSchema);
